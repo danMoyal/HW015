@@ -18,7 +18,7 @@ export const Card = ({ id, url, description, price, cardlist, setCardlist, show,
 
 
     function showm() {
-        let index = cardlist.findIndex((i) => i.id === id);
+        // let index = cardlist.findIndex((i) => i.id === id);
         setdatamodal({
             url: url,
             id: id,
@@ -34,7 +34,7 @@ export const Card = ({ id, url, description, price, cardlist, setCardlist, show,
     return (
 
         <div className="card">
-            <img src={url} className="card-img" onClick={() => (showm())} />
+            <img src={url} alt="nothing" className="card-img" onClick={() => (showm())} />
             <p>{description}</p>
             <div className="addToCard">
                 <p>${price}</p>
